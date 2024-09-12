@@ -22,7 +22,7 @@
     <groupId>org.apache</groupId>
     <artifactId>apache</artifactId>
     <version>31</version>
-    <relativePath />
+    <relativePath/>
   </parent>
 
   <groupId>org.apache.dubbo</groupId>
@@ -33,7 +33,7 @@
   <properties>
     <revision>3.2.16-SNAPSHOT</revision>
     <maven_flatten_version>1.6.0</maven_flatten_version>
-    <curator5_version>5.1.0</curator5_version>
+    <curator5_version>5.7.0</curator5_version>
     <zookeeper_version>3.8.4</zookeeper_version>
     <spotless-maven-plugin.version>2.43.0</spotless-maven-plugin.version>
     <spotless.action>check</spotless.action>
@@ -184,7 +184,7 @@
                 <palantirJavaFormat>
                   <version>${palantirJavaFormat.version}</version>
                 </palantirJavaFormat>
-                <removeUnusedImports />
+                <removeUnusedImports/>
                 <importOrder>
                   <file>dubbo-importorder.txt</file>
                 </importOrder>
