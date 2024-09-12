@@ -118,7 +118,7 @@
 
   <properties>
     <!-- Test libs -->
-    <junit_jupiter_version>5.9.3</junit_jupiter_version>
+    <junit_jupiter_version>5.11.0</junit_jupiter_version>
     <awaitility_version>4.2.2</awaitility_version>
     <hazelcast_version>3.12.13</hazelcast_version>
     <hamcrest_version>2.2</hamcrest_version>
@@ -156,7 +156,7 @@
     <maven_antrun_version>3.1.0</maven_antrun_version>
     <maven_os_plugin_version>1.7.1</maven_os_plugin_version>
     <maven_protobuf_plugin_version>0.6.1</maven_protobuf_plugin_version>
-    <arguments />
+    <arguments/>
     <checkstyle.skip>true</checkstyle.skip>
     <checkstyle_unix.skip>true</checkstyle_unix.skip>
     <rat.skip>true</rat.skip>
@@ -271,7 +271,7 @@
           <version>${maven_surefire_version}</version>
           <configuration>
             <!-- Activate the use of TCP to transmit events to the plugin to fix Corrupted STDOUT issue -->
-            <forkNode implementation="org.apache.maven.plugin.surefire.extensions.SurefireForkNodeFactory" />
+            <forkNode implementation="org.apache.maven.plugin.surefire.extensions.SurefireForkNodeFactory"/>
           </configuration>
         </plugin>
         <!-- keep surefire and failsafe in sync -->
@@ -430,15 +430,15 @@
             <configuration>
               <failOnError>true</failOnError>
               <target>
-                <property name="version_file" value="${project.build.outputDirectory}/META-INF/dubbo-versions/${project.artifactId}" />
+                <property name="version_file" value="${project.build.outputDirectory}/META-INF/dubbo-versions/${project.artifactId}"/>
                 <!-- get the current version of dubbo -->
-                <echo file="${version_file}" message="revision=${revision}${line.separator}" />
+                <echo file="${version_file}" message="revision=${revision}${line.separator}"/>
                 <!-- attach the artifact id -->
-                <echo append="true" file="${version_file}" message="artifact.id=${project.artifactId}${line.separator}" />
-                <echo append="true" file="${version_file}" message="git.commit.id=" />
+                <echo append="true" file="${version_file}" message="artifact.id=${project.artifactId}${line.separator}"/>
+                <echo append="true" file="${version_file}" message="git.commit.id="/>
                 <!-- get the latest commit id -->
                 <exec append="true" error=".git.exec.error" executable="git" failifexecutionfails="false" output="${version_file}" timeout="3000">
-                  <arg line="rev-parse HEAD" />
+                  <arg line="rev-parse HEAD"/>
                 </exec>
               </target>
             </configuration>
@@ -793,7 +793,7 @@
                 <!-- common shared -->
               </systemProperties>
               <!-- Activate the use of TCP to transmit events to the plugin to fix Corrupted STDOUT issue -->
-              <forkNode implementation="org.apache.maven.plugin.surefire.extensions.SurefireForkNodeFactory" />
+              <forkNode implementation="org.apache.maven.plugin.surefire.extensions.SurefireForkNodeFactory"/>
             </configuration>
           </plugin>
         </plugins>
@@ -814,7 +814,7 @@
                 <!-- common shared -->
               </systemProperties>
               <!-- Activate the use of TCP to transmit events to the plugin to fix Corrupted STDOUT issue -->
-              <forkNode implementation="org.apache.maven.plugin.surefire.extensions.SurefireForkNodeFactory" />
+              <forkNode implementation="org.apache.maven.plugin.surefire.extensions.SurefireForkNodeFactory"/>
             </configuration>
           </plugin>
         </plugins>
@@ -897,7 +897,7 @@
                 <palantirJavaFormat>
                   <version>${palantirJavaFormat.version}</version>
                 </palantirJavaFormat>
-                <removeUnusedImports />
+                <removeUnusedImports/>
                 <importOrder>
                   <file>dubbo-importorder.txt</file>
                 </importOrder>
