@@ -36,7 +36,7 @@
     <commons.compress.version>1.27.1</commons.compress.version>
     <junit.platform.launcher.version>1.9.3</junit.platform.launcher.version>
     <commons.exec.version>1.4.0</commons.exec.version>
-    <async.http.client.version>2.12.3</async.http.client.version>
+    <async.http.client.version>3.0.1</async.http.client.version>
   </properties>
 
   <dependencies>
